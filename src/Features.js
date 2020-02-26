@@ -1,6 +1,6 @@
 import React from 'react'
 import slugify from 'slugify';
-import Feature from './Feature'
+import FeatureOptions from './FeatureOptions'
 
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -30,7 +30,7 @@ export default class Features extends React.Component {
         );
       });
       return (
-        <Feature 
+        <FeatureOptions 
           featureHash={featureHash}
           options = {options}/>
       )
